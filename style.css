@@ -125,3 +125,64 @@ body{
     background: red;
 }
 
+.sec-hand{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    z-index: 5;
+}
+
+.sec-hand:before{
+    position: absolute;
+    content: '';
+    height: 130px;
+    width: 3px;
+    left: -1px;
+    top: -25px;
+    background: red;
+}
+
+.sec-hand:after{
+    position: absolute;
+    content: '';
+    height: 45px;
+    width: 7px;
+    left: -3px;
+    top: -55px;
+    background: red;
+    border-radius: 3px;
+}
+
+.min-hand{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    z-index: 4;
+    transform: rotate(240deg);
+}
+
+.min-hand:before{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 1px;
+    left: -3px;
+    top: -95px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 70px solid #303030;
+}
+
+.min-hand:after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 3px;
+    left: -3px;
+    top: -25px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 25px solid #303030;
+}
+
+
