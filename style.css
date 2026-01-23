@@ -186,3 +186,34 @@ body{
 }
 
 
+.hr-hand{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    z-index: 3;
+    transform: rotate(120deg);
+}
+
+.hr-hand:before{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 1px;
+    left: -3px;
+    top: -75px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 55px solid #303030;
+}
+
+.hr-hand:after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 3px;
+    left: -3px;
+    top: -20px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 20px solid #303030;
+}
